@@ -30,13 +30,23 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. Explain how to build stateful class components.
 
+  One is buit by extending "component" from react and setting state within the constructor, underneath super. After the state is set here you can alter the state outside of the constuctor with functions and in the render function.
+
 2. Describe the different phases of the component lifecycle.
+
+  The component lifecycle has three phases it goes through -  mounting updating, and unmounting. Mounting is where our component gets put onto the DOM. Unmounting is the opposite, when the component gets romoved from the DOM. Updating is where we recieve new props or state that changes our component in one way or another.
 
 3. Demonstrate an understanding of class component lifecycle methods.
 
+  There are many different lifecycle methods that come with class components. Such as: constuctor(), super(), render(), coomponentDidMount(), etc. They are, in essence, a series of events that happen within the component.
+
 4. Define stateful logic.
 
+  Stateful logic has a fairly broad definition. But, essentially what it is, is anything within our component that effects the state. Any function that can change our component do something like a UI event is considered stateful logic.
+
 5. Describe how to test a React component with React Testing Library.
+
+  The react testing library allows us to test our component by mimicing userinterface, and making sure our product is fully functional before we deploy.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
@@ -54,27 +64,27 @@ _Please follow the setup instructions closely so that you can get everything up 
 
 **Basic set up**
 
-- [ ] Create a forked copy of this project
-- [ ] Add your team lead as collaborator on Github
-- [ ] Clone your OWN version of the repository (Not Lambda's by mistake!)
-- [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
+- [X] Create a forked copy of this project
+- [X] Add your team lead as collaborator on Github
+- [X] Clone your OWN version of the repository (Not Lambda's by mistake!)
+- [X] Create a new branch: git checkout -b `<firstName-lastName>`.
 
 **Starting the server**
 
-- [ ] Run `npm install` to download dependencies for the server.
-- [ ] Run the server using `npm start`.
-- [ ] Open a new browser tab and navigate to `http://localhost:3333/plants` - if you see a JSON object with plants data, then you know the server is running 👍
+- [X] Run `npm install` to download dependencies for the server.
+- [X] Run the server using `npm start`.
+- [X] Open a new browser tab and navigate to `http://localhost:3333/plants` - if you see a JSON object with plants data, then you know the server is running 👍
 
 **Starting the React app**
 
-- [ ] In a separate terminal cd into the `client` folder and run `npm install` to download dependencies.
-- [ ] Still inside the `client` folder run `npm run start` to run the client application.
-- [ ] Your browser should open up the project as normal
+- [X] In a separate terminal cd into the `client` folder and run `npm install` to download dependencies.
+- [X] Still inside the `client` folder run `npm run start` to run the client application.
+- [X] Your browser should open up the project as normal
 
 **Starting your test runner**
 
-- [ ] In the final terminal window, make sure you are in the `client` folder still
-- [ ] Start the test runner with `npm test` (I recommend doing this only when you're testing - any change in your app will make the tests run, and that could eat up your computer power)
+- [X] In the final terminal window, make sure you are in the `client` folder still
+- [X] Start the test runner with `npm test` (I recommend doing this only when you're testing - any change in your app will make the tests run, and that could eat up your computer power)
 
 **Commit and Push OFTEN!**
 
